@@ -3,9 +3,9 @@
 #include <fstream>
 
 void FileCopier::xmlParse() {
-	TiXmlDocument xml_balse(this->xml_config_.c_str());
-	if (xml_balse.LoadFile()) {
-		TiXmlElement *element = xml_balse.FirstChildElement("config")->FirstChildElement("file");
+	TiXmlDocument xml_baise(this->xml_config_.c_str());
+	if (xml_baise.LoadFile()) {
+		TiXmlElement *element = xml_baise.FirstChildElement("config")->FirstChildElement("file");
 		if (element == NULL) {
 			throw std::runtime_error("Wrong xml format");
 		}
